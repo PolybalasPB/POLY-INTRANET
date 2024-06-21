@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="/CSS/criar-conta.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="login-box">
+                <div class="logo-box">
+                    <img src="/Assets/imagens/logo_polybalas.webp" alt="Logo da TIMAX">
+                    <p>Criar sua conta</p>
+                </div>
+                
+                <form action="#">
+                    <div class="input-group">
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="text" id="cpf" placeholder="CPF">
+                        <input type="password" id="senha" placeholder="Senha">
+                      </div>
+                    <button type="submit">Criar</button>
+                </form>
+                <div class="login-links">
+                    <a href="/Paginas/login.html">Voltar para Login</a>
+                    <a href="#" class="descrição">Fale mais sobre você</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="image-box">
+                <img src="/Assets/imagens/img1.jpg" alt="Imagem 1">
+                <img src="/Assets/imagens/img2.jpg" alt="Imagem 2">
+                <img src="/Assets/imagens/img3.jpg" alt="Imagem 3">
+                <img src="/Assets/imagens/img4.jpg" alt="Imagem 4">
+                <img src="/Assets/imagens/img5.jpg" alt="Imagem 5">
+            </div>
+        </div>
+    </div>  
+    
+    
+    <script src="/Scripts/descricao.js"></script>
+    <script>
+        // Seleciona todas as imagens dentro da div .image-box
+        const images = document.querySelectorAll('.image-box img');
+        let currentImageIndex = 0;
+
+        // Função para exibir a próxima imagem
+        function showNextImage() {
+            // Oculta a imagem atual
+            images[currentImageIndex].style.display = 'none';
+
+            // Incrementa o índice da imagem atual, reiniciando se necessário
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+
+            // Exibe a próxima imagem
+            images[currentImageIndex].style.display = 'block';
+        }
+
+        // Exibe a primeira imagem inicialmente
+        images[currentImageIndex].style.display = 'block';
+
+        // Alterna para a próxima imagem a cada 4 segundos
+        setInterval(showNextImage, 4000);
+
+    </script>
+</body>
+</html>

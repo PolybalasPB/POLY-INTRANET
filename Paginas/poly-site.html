@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polybalas</title>
+    <link rel="stylesheet" href="/CSS/site.css">
+</head>
+<body>
+    <header>
+        <nav id="menu-toggle">
+            <img src="/Assets/icons/menu-burger.svg" alt="menu">
+            
+            <div class="menu-active">
+              <div class="menu-nav-i" id="Uni-plb">
+                <img src="/Assets/icons/book-open-cover.png" alt="Universidade Polybalas"><span>Universidade Polybalas</span>
+              </div>
+
+              <div class="menu-nav-i" id="cadastro-data">
+                <img src="/Assets/icons/file-user.png" alt="Dados de cadastro"><span>Dados de Cadastro</span>
+              </div>
+              
+              <div class="menu-nav-i" id="CC-BH">
+                <img src="/Assets/icons/hand-holding-usd.png" alt="Banco de Horas"><span>Contra-Cheque & Banco de Horas</span>
+              </div>
+
+              <div class="menu-nav-i" id="vagas">
+                <img src="/Assets/icons/corporate-alt.png" alt="Minhas Vagas"><span>Minhas Vagas</span>
+              </div>
+            </div> 
+        </nav>
+        
+
+        <div class="poly-logo">
+            <img src="/Assets/imagens/polybalas-logo.png" alt="logo-polybalas">
+        </div>
+
+        <div class="user">
+            <div class="user-data">
+              <ul>
+                <li>
+                  <p>{NOME}</p>
+                </li>
+                <li>
+                  <p>{cpf: 982.321.555.90}</p>
+                </li>
+                <li>
+                  <p>{IDADE}</p>
+                </li>
+                <li>
+                  <p>{CARGO}</p>
+                </li>
+              </ul>
+            </div>
+            <img src="/Assets/icons/user.png" alt="user" >
+        </div>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <div class="search-container">
+              <input type="search" placeholder="Pesquisar...">
+              <div class="search-icons">
+                <img src="/Assets/icons/search.svg" alt="">
+              </div>
+            </div>
+        </section>
+
+        <section class="slide-section">
+            <button class="pre-btn" onclick="moveSlide(-1)"><img src="/Assets/icons/angle-left.svg" alt=""></button>
+            <button class="nxt-btn" onclick="moveSlide(1)"><img src="/Assets/icons/angle-right.svg" alt=""></button>
+            <div class="slide-container">
+              <div class="slide-card">
+                <h3>Vagas Internas</h3>
+                <img src="/Assets/imagens/vagas-internas.png" alt="vagas-internas">
+              </div>
+              <div class="slide-card">
+                <h3>Cardápio do Dia</h3>
+                <img src="/Assets/imagens/cardapio-dia.png" alt="cardápio do dia">
+              </div>
+              <div class="slide-card">
+                <h3>Aniversariantes</h3>
+                <img src="/Assets/imagens/aniversariante.png" alt="cardápio do dia">
+              </div>
+              <div class="slide-card">
+                <h3>Aniversariantes</h3>
+                <img src="/Assets/imagens/aniversariante.png" alt="cardápio do dia">
+              </div>
+              <div class="slide-card">
+                <h3>Aniversariantes</h3>
+                <img src="/Assets/imagens/aniversariante.png" alt="cardápio do dia">
+              </div>
+              <div class="slide-card">
+                <h3>Aniversariantes</h3>
+                <img src="/Assets/imagens/aniversariante.png" alt="cardápio do dia">
+              </div>
+              
+            </div>
+            
+          </section>
+
+          <section class="avisos-gerais">
+              <span>14</span>
+              <p>AVISOS GERAIS E TREINAMENTOS</p>
+          </section>
+        
+    </main>
+    <script src="/Scripts/site.js"></script>
+</body>
+</html>
