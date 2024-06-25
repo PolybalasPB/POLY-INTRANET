@@ -1,0 +1,13 @@
+fastapi
+pip install fastapi
+uvicorn
+pip install uvicorn
+psycopg2-binary
+pip install psycopg2-binary
+
+para checar se foi instalado as dependências 
+pip list
+
+para checar se o pip está instalado
+pip --version
+
