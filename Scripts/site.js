@@ -34,3 +34,4 @@ user.addEventListener("click", ()=> {
 document.querySelector('#CC-BH').addEventListener('click', ()=> {
   window.location = 'https://polybalasdistribuidora136696.rm.cloudtotvs.com.br/FrameHTML/Web/App/RH/PortalMeuRH/#/login'
 })
+

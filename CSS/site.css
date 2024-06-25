@@ -16,16 +16,16 @@ body {
 
 header {
     width: 100vw;
-    height: 20vh;
+    height: 14vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-    border-bottom: 5vh solid #f5362f;
+    border-bottom: 2vh solid #BC0001;
 }
 
 header .poly-logo img {
-    height: 35vh;
+    height: 10vh;
 
 }
 @media (max-width: 430px) {
@@ -35,7 +35,7 @@ header .poly-logo img {
 }
 
 header nav img{
-    height: 6vh;
+    height: 4vh;
     margin-left: 2vw;
     cursor: pointer;
 }
@@ -89,7 +89,7 @@ header nav img{
 }
 
 header .user img {
-    height: 7vh;
+    height: 5vh;
     margin-right: 2vw;
     cursor: pointer;
 }
@@ -141,7 +141,7 @@ header .user img {
     height: 30vh;
     display: flex;
     align-items: center;
-    background-color: #f5362f;
+    background-color: #BC0001;
     margin-top: 5vh;
 }
 
@@ -155,7 +155,7 @@ header .user img {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid black;
     box-sizing: border-box;
     background-color: #f9f9f9;
@@ -296,7 +296,7 @@ header .user img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border-top: .5rem solid #f5362f;
+  border-top: .5rem solid #BC0001;
   margin-top: 2rem;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -351,4 +351,26 @@ header .user img {
     font-size: 2rem;
     text-wrap: wrap;
   }
+}
+
+.avisos-gerais {
+  height:75vh;
+  width: 100vw;
+  background: url('/Assets/imagens/footer-img.png') ;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.alerta-aviso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #646363c4;
+  color: #BC0001;
+  box-shadow:2px 2px 4px rgba(0, 0, 0, 0.664);
+  transform: translateY(200px);
 }
