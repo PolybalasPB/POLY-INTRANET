@@ -112,7 +112,7 @@ form button:hover {
     display: flex;
     position: relative;
     bottom: 8vh;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     align-items: center;
 }
@@ -121,6 +121,8 @@ form button:hover {
     color: black;
     margin: 17px;
     position: relative;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 
 .login-links label {
